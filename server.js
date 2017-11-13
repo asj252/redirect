@@ -3,22 +3,21 @@
 var http = require('http');
 
 var mappings = {
-  g: 'http://www.google.com'
+  g: 'https://www.facebook.com/codingwithgobot'
 };
 
 var server = http.createServer(function(req, res) {
   var alias = req.url.substring(1);
-//  process.stdout.write("123"+req.url);
-  if (!mappings[alias]) {
+/* if (!mappings[alias]) {
     res.writeHead(404);
     res.end();
     return;
   }
-
+*/
 // process.stdout.write("123"+req.url); 
   res.writeHead(302, {
 
-     location: mappings[alias]
+     location: mappings['g']
   })
   res.end();
 });
