@@ -1,10 +1,11 @@
 'use strict'
 
 var http = require('http');
+
 var port = process.env.PORT || 3000;
 
 var mappings = {
-  g: 'https://www.facebook.com/codingwithgobot'
+  g: 'https://www.indiegogo.com/projects/gobot-a-tangible-programming-bot-for-kid-learning/coming_soon'
 };
 
 var server = http.createServer(function(req, res) {
