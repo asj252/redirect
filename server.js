@@ -5,7 +5,7 @@ var http = require('http');
 var port = process.env.PORT || 3000;
 
 var mappings = {
-  g: 'https://www.indiegogo.com/projects/gobot-a-tangible-programming-bot-for-kid-learning/coming_soon'
+  g: 'https://igg.me/at/gobot'
 };
 
 var server = http.createServer(function(req, res) {
